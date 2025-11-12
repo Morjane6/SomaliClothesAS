@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Somali Clothes</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">SC</div>
+          <span class="logo-text">Somali Clothes</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="kolleksjon.html" class="nav-link">Kolleksjon</a>
+          </li>
+          <li class="nav-item">
+            <a href="om-oss.html" class="nav-link">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Collection Section -->
+    <section class="collection" id="kolleksjon">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Kolleksjon</h2>
+          <p class="section-subtitle">
+            Våre vakre klær kombinerer tradisjonell somalisk håndverk med
+            moderne design
+          </p>
+        </div>
+
+        <div class="filter-tabs fade-in">
+          <button
+            class="filter-tab active"
+            onclick="filterProducts('alle', this)"
+          >
+            Alle
+          </button>
+          <button class="filter-tab" onclick="filterProducts('kjoler', this)">
+            Kjoler
+          </button>
+          <button class="filter-tab" onclick="filterProducts('Sets', this)">
+            Sets
+          </button>
+          <button
+            class="filter-tab"
+            onclick="filterProducts('accessories', this)"
+          >
+            accessories
+          </button>
+        </div>
+
+        <div class="products-grid fade-in">
+          <div class="feature-card" data-category="kjoler">
+            <div class="feature-icon images">
+              <img src="img/kjole2.png" alt="Rose Gold Gown" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Rose Gold Gown</h3>
+              <p>
+                Glitrende paljettkjole i roségull med elegant snitt. Perfekt for
+                bryllup, galla og luksuriøse anledninger.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="kjoler">
+            <div class="feature-icon images">
+              <img src="img/kjole5.png" alt="Black Kaftan" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Black Kaftan</h3>
+              <p>
+                Luksuriøs svart kaftan med elegant flyt og tidløst design.
+                Ideell for festlige anledninger og kveldsbruk.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="kjoler">
+            <div class="feature-icon images">
+              <img src="img/kjole3.png" alt="Alexandra Dress" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Alexandra Dress</h3>
+              <p>
+                Luftig chiffonkjole med lagdelt design og feminin silhuett.
+                Perfekt til sommerfester og elegante anledninger.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="kjoler">
+            <div class="feature-icon images">
+              <img src="img/kjole4.png" alt="Hiba Dress" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Hiba Dress</h3>
+              <p>
+                Elegant kjole i chiffon med abstrakt print og lett shimmer. Gir
+                et sofistikert og beskjedent uttrykk til enhver anledning.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="Sets">
+            <div class="feature-icon images">
+              <img src="img/sets6.png" alt="Boqorad Dress" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Boqorad Dress</h3>
+              <p>
+                Elegant maxi-kjole med glitrende krystaller og flytende cape.
+                Perfekt til fest og spesielle anledninger.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="Sets">
+            <div class="feature-icon images">
+              <img src="img/sets5.png" alt="Butterfly Kaftan" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Butterfly Kaftan</h3>
+              <p>
+                Flytende chiffon abaya med floralt sommerfuglmotiv. Gir et
+                elegant og grasiøst uttrykk til enhver anledning.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="Sets">
+            <div class="feature-icon images">
+              <img src="img/sets4.png" alt="Malika Set" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Malika Set</h3>
+              <p>
+                Eksklusivt satengsett med glitrende paljettdetaljer. Gir et
+                elegant og sofistikert uttrykk med modest stil.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="Sets">
+            <div class="feature-icon images">
+              <img src="img/sets3.png" alt="Plum Jersey" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Plum Jersey</h3>
+              <p>
+                Myk og behagelig kjole i stretch-jersey. Designet for en
+                flatterende og tidløs passform.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="accessories">
+            <div class="feature-icon images">
+              <img src="img/smykke1.png" alt="Iman Set" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Iman Set</h3>
+              <p>
+                Elegant smykkesett med glitrende steiner og tidløs design.
+                Perfekt for bryllup, fest og spesielle anledninger.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="accessories">
+            <div class="feature-icon images">
+              <img src="img/perfume.png" alt="Ameera Perfume" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Ameera Perfume</h3>
+              <p>
+                Forførende duft med en sofistikert og langvarig aroma. Perfekt
+                for daglig bruk eller spesielle anledninger.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="accessories">
+            <div class="feature-icon images">
+              <img src="img/parfima.png" alt="Bahrain Pearl" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Bahrain Pearl</h3>
+              <p>
+                Luksuriøs duft med delikate og sofistikerte noter. Perfekt for
+                elegante og uforglemmelige øyeblikk.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+          <div class="feature-card" data-category="accessories">
+            <div class="feature-icon images">
+              <img src="img/smykke5.png" alt="Asma Set" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Asma Set</h3>
+              <p>
+                Stilrent smykkesett med glitrende detaljer. Perfekt for festlige
+                anledninger og elegante antrekk.
+              </p>
+              <p class="product-price">499 NOK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Somali Clothes</h3>
+            <p>
+              Autentiske somaliske klær med moderne design. Vi bringer
+              tradisjonell håndverk til det moderne liv.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com"
+                class="social-link"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/somaliclothes"
+                class="social-link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/somaliclothes"
+                class="social-link"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigasjon</h3>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="kolleksjon.html">Kolleksjon</a></li>
+              <li><a href="om-oss.html">Om oss</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Kundeservice</h3>
+            <ul class="footer-links">
+              <li><a href="kontakt.html">Størrelsesguide</a></li>
+              <li><a href="kontakt.html">Retur & Bytte</a></li>
+              <li><a href="kontakt.html">Frakt & Levering</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Kontakt info</h3>
+            <p>
+              <a
+                href="https://www.google.com/maps?q=Storgata+123,+0150+Oslo"
+                target="_blank"
+                class="contact-link"
+              >
+                <i class="fas fa-map-marker-alt"></i> Storgata 123, 0150 Oslo
+              </a>
+            </p>
+            <p>
+              <a href="tel:+4712345678" class="contact-link">
+                <i class="fas fa-phone"></i> +47 123 45 678
+              </a>
+            </p>
+            <p>
+              <a href="mailto:post@somaliclothe.no" class="contact-link">
+                <i class="fas fa-envelope"></i> post@somaliclothe.no
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Somali Clothes. Alle rettigheter forbeholdt.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

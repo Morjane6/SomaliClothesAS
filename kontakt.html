@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Somali Clothes</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="home.html" class="logo">
+          <div class="logo-icon">SC</div>
+          <span class="logo-text">Somali Clothes</span>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="home.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="kolleksjon.html" class="nav-link">Kolleksjon</a>
+          </li>
+          <li class="nav-item">
+            <a href="om-oss.html" class="nav-link">Om oss</a>
+          </li>
+          <li class="nav-item">
+            <a href="kontakt.html" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Contact Section -->
+    <section class="contact" id="kontakt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <h2 class="section-title">Kontakt</h2>
+          <p class="section-subtitle">Vi svarer på alle spørsmål ta kontakt</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <!-- Adresse -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <strong>Adresse</strong><br />
+                <a
+                  href="https://www.google.com/maps?q=Storgata+123,+0150+Oslo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-link"
+                >
+                  Storgata 123, 0150 Oslo
+                </a>
+              </div>
+            </div>
+            <!-- Telefon -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <strong>Telefon</strong><br />
+                <a href="tel:+4712345678" class="contact-link"
+                  >+47 123 45 678</a
+                >
+              </div>
+            </div>
+
+            <!-- E-post -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <strong>E-post</strong><br />
+                <a href="mailto:post@somaliclothe.no" class="contact-link"
+                  >post@somaliclothe.no</a
+                >
+              </div>
+            </div>
+
+            <!-- Åpningstider -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <strong>Åpningstider</strong><br />
+                Man-Fre: 10:00-18:00<br />
+                Lør: 11:00-16:00
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Send oss en melding</h3>
+            <form id="kontaktForm">
+              <div class="form-group">
+                <label for="navn">Navn *</label>
+                <input type="text" id="navn" name="navn" required  placeholder="full navn"/>
+              </div>
+              <div class="form-group">
+                <label for="epost">E-post *</label>
+                <input type="email" id="epost" name="epost" required placeholder="eksempel@domene.com"/>
+              </div>
+              <div class="form-group">
+                <label for="telefon">Telefon *</label>
+                <input
+                  type="tel"
+                  id="telefon"
+                  name="telefon"
+                  required
+                  pattern="^\+47\d{8}$"
+                  placeholder="+4778654332"
+                  title="Telefonnummer må starte med +47 og ha 8 sifre etter det."
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="melding">Melding *</label>
+                <textarea
+                  id="melding"
+                  name="melding"
+                  placeholder="Skriv din melding her..."
+                  required
+                ></textarea>
+              </div>
+
+              <div style="text-align: center">
+                <button type="submit" class="btn btn-primary">
+                  Send melding
+                </button>
+              </div>
+            </form>
+
+            <!-- Popup/Toast for bekreftelse -->
+            <div id="popupBekreftelse" class="popup-bekreftelse">
+              <p>
+                Takk for at du kontaktet oss! Vi kommer tilbake så raskt som
+                mulig.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Somali Clothes</h3>
+            <p>
+              Autentiske somaliske klær med moderne design. Vi bringer
+              tradisjonell håndverk til det moderne liv.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.facebook.com"
+                class="social-link"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a
+                href="https://www.instagram.com/somaliclothes"
+                class="social-link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/somaliclothes"
+                class="social-link"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-x-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigasjon</h3>
+            <ul class="footer-links">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="kolleksjon.html">Kolleksjon</a></li>
+              <li><a href="om-oss.html">Om oss</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Kundeservice</h3>
+            <ul class="footer-links">
+              <li><a href="kontakt.html">Størrelsesguide</a></li>
+              <li><a href="kontakt.html">Retur & Bytte</a></li>
+              <li><a href="kontakt.html">Frakt & Levering</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Kontakt info</h3>
+            <p>
+              <a
+                href="https://www.google.com/maps?q=Storgata+123,+0150+Oslo"
+                target="_blank"
+                class="contact-link"
+              >
+                <i class="fas fa-map-marker-alt"></i> Storgata 123, 0150 Oslo
+              </a>
+            </p>
+            <p>
+              <a href="tel:+4712345678" class="contact-link">
+                <i class="fas fa-phone"></i> +47 123 45 678
+              </a>
+            </p>
+            <p>
+              <a href="mailto:post@somaliclothe.no" class="contact-link">
+                <i class="fas fa-envelope"></i> post@somaliclothe.no
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Somali Clothes. Alle rettigheter forbeholdt.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
